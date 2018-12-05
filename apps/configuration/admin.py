@@ -2,7 +2,9 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
+
 from django_admin_json_editor import JSONEditorWidget
+from django_json_schema_editor.widgets import JSONSchemaEditorWidget
 
 from .models import Schema, Configuration
 
@@ -37,3 +39,7 @@ class ConfigurationAdmin(admin.ModelAdmin):
 @admin.register(Schema)
 class SchemaAdmin(admin.ModelAdmin):
     search_fields = ('data',)
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super(SchemaAdmin, self).get_form(request, obj, widgets={'data': JSONSchemaEditorWidget}, **kwargs)
+        return form

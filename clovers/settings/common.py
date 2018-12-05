@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'rest_framework_swagger',
     'django_extensions',
     'django_admin_json_editor',
+    'django_json_schema_editor',
     'apps.configuration',
 )
 
