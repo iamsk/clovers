@@ -3,21 +3,26 @@
 
 Flexible configuration management, for non developers !
 
+1. support json schema editor;
+2. support json editor;
+3. support get configurations with api;
+4. TODO: support other backends, like spring-cloud-config, Aliyun ACM, ctripcorp/apollo, etc.
+
 ## Samples
 
-create a object type with schema editor
+### create an object type with schema editor
 
 ![object-json-schema](./media/object-json-schema.jpg)
 
-create a specific object with the object type
+### create a specific object with the object type
 
 ![object-json](./media/object-json.jpg)
 
-create a array type with schema editor
+### create an array type with schema editor
 
 ![array-json-schema](./media/array-json-schema.jpg)
 
-create a specific array with the array type
+### create a specific array with the array type
 
 ![array-json](./media/array-json.jpg)
 
