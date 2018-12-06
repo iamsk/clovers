@@ -5,3 +5,4 @@ django-extensions==2.1.4
 jsonfield==2.0.2
 git+ssh://git@github.com/bastionhost/django-admin-json-editor.git
 git+ssh://git@github.com/bastionhost/django-json-schema-editor.git
+newrelic
