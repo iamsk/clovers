@@ -3,11 +3,23 @@
 
 Flexible configuration management, for non developers !
 
-This project has the following basic apps:
+## Samples
 
-* App1 (short desc)
-* App2 (short desc)
-* App3 (short desc)
+create a object type with schema editor
+
+![object-json-schema](./media/object-json-schema.jpg)
+
+create a specific object with the object type
+
+![object-json](./media/object-json.jpg)
+
+create a array type with schema editor
+
+![array-json-schema](./media/array-json-schema.jpg)
+
+create a specific array with the array type
+
+![array-json](./media/array-json.jpg)
 
 ## Installation
 
