@@ -43,3 +43,8 @@ class SchemaAdmin(admin.ModelAdmin):
     def get_form(self, request, obj=None, **kwargs):
         form = super(SchemaAdmin, self).get_form(request, obj, widgets={'data': JSONSchemaEditorWidget}, **kwargs)
         return form
+
+
+admin.site.site_header = 'CLOVERS'
+admin.site.index_title = 'Administration'
+admin.site.site_title = 'CLOVERS'

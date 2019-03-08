@@ -6,10 +6,9 @@ from jsonfield import JSONField
 
 
 class Schema(models.Model):
-    data = JSONField()
+    data = JSONField(default={})
 
     def _get_name(self, data):
-        print data
         name = ''
         if data['type'] == 'object':
             name += '-'.join(data['properties'].keys())

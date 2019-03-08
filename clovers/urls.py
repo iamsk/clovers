@@ -15,10 +15,18 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework_swagger.views import get_swagger_view
+from rest_framework.routers import DefaultRouter
+
+from apps.configuration.views import SchemaView, ConfigurationView
+
+router = DefaultRouter()
+router.register(r'schemas', SchemaView)
+router.register(r'configurations', ConfigurationView)
 
 schema_view = get_swagger_view(title='clovers API')
 
 urlpatterns = [
+    url(r'^', include(router.urls)),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^docs/$', schema_view)
+    # url(r'^docs/$', schema_view),
 ]
