@@ -8,6 +8,16 @@ Flexible configuration management, for non developers !
 3. support get configurations with api;
 4. TODO: support other backends, like spring-cloud-config, Aliyun ACM, ctripcorp/apollo, etc.
 
+## Demo
+
+Be careful to use this
+
+url: http://clovers.bastionhost.org/admin/
+
+username: demo
+
+password: demo
+
 ## Samples
 
 ### create an object type with schema editor
