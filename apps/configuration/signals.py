@@ -8,7 +8,7 @@ from .models import Configuration
 
 def sync(sender, instance, **kwargs):
     content = json.dumps(instance.data)
-    c.publish(data_id=str(instance.id), group=settings.ALIYUN_ACM['GROUP'], content=content)
+    c.publish(data_id=instance.name, group=settings.ALIYUN_ACM['GROUP'], content=content)
 
 
 if settings.ALIYUN_ACM:
