@@ -15,8 +15,8 @@ def get_schema(id):
 
 @admin.register(Configuration)
 class ConfigurationAdmin(admin.ModelAdmin):
-    list_display = ('id', 'schema', 'data')
-    search_fields = ('data',)
+    list_display = ('name', 'schema', 'data')
+    search_fields = ('name', 'data',)
     list_filter = ('schema',)
 
     def get_readonly_fields(self, request, obj=None):

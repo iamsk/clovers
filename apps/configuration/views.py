@@ -15,3 +15,4 @@ class SchemaView(viewsets.ReadOnlyModelViewSet):
 class ConfigurationView(viewsets.ReadOnlyModelViewSet):
     serializer_class = ConfigurationSerializer
     queryset = Configuration.objects.all()
+    lookup_field = 'name'

@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from jsonfield import JSONField
+import shortuuid
 
 
 class Schema(models.Model):
@@ -23,5 +24,6 @@ class Schema(models.Model):
 
 
 class Configuration(models.Model):
+    name = models.CharField(max_length=100, unique=True, default=shortuuid.uuid)
     schema = models.ForeignKey(Schema)
     data = JSONField(null=True, blank=True)

@@ -9,10 +9,10 @@ from .models import Schema, Configuration
 class SchemaSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Schema
-        fields = '__all__'
+        fields = ('url', 'data')
 
 
 class ConfigurationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Configuration
-        fields = '__all__'
+        fields = ('name', 'schema', 'data')

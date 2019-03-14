@@ -107,3 +107,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR + '/../static/'
+
+# SYNC
+ALIYUN_ACM = {}

@@ -5,4 +5,7 @@ from django.apps import AppConfig
 
 
 class ConfigurationConfig(AppConfig):
-    name = 'configuration'
+    name = 'apps.configuration'
+
+    def ready(self):
+        import signals  # noqa
