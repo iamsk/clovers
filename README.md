@@ -1,4 +1,3 @@
-
 # clovers
 
 Flexible configuration management, for non developers !
@@ -6,11 +5,12 @@ Flexible configuration management, for non developers !
 1. support json schema editor;
 2. support json editor;
 3. support get configurations with api;
-4. TODO: support other backends, like spring-cloud-config, Aliyun ACM, ctripcorp/apollo, etc.
+4. support backends: builtin DB, Aliyun ACM
+5. TODO: support other backends, like spring-cloud-config, ctrip apollo, etc.
 
 ## Demo
 
-Be careful to use this
+Be nice to use this
 
 url: http://clovers.bastionhost.org/admin/
 
